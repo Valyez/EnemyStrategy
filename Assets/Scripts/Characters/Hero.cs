@@ -1,14 +1,17 @@
 ﻿using Movement;
 using UnityEngine;
 
-[RequireComponent(typeof(MovementBehaviour))]
-public class Hero : MonoBehaviour
+namespace Characters
 {
-    [SerializeField] private MovementStrategiesEnum _movementStrategy;
-
-    private void Awake()
+    [RequireComponent(typeof(MovementBehaviour))]
+    public class Hero : MonoBehaviour
     {
-        MovementBehaviour movementBehaviour = gameObject.GetComponent<MovementBehaviour>();
-        movementBehaviour.Initialize(_movementStrategy);
+        [SerializeField] private MovementStrategiesEnum _movementStrategy;
+
+        private void Awake()
+        {
+            MovementBehaviour movementBehaviour = gameObject.GetComponent<MovementBehaviour>();
+            movementBehaviour.Initialize(_movementStrategy);
+        }
     }
 }

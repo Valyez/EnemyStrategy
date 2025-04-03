@@ -11,11 +11,11 @@ namespace Movement
 
             Vector3 inputVector =
                 new Vector3(
-                    horizontal * (Constant.DEFAULT_SPEED * Time.deltaTime),
+                    horizontal * (Constant.HERO_SPEED * Time.deltaTime),
                     0,
-                    vertical * (Constant.DEFAULT_SPEED * Time.deltaTime));
+                    vertical * (Constant.HERO_SPEED * Time.deltaTime));
 
-            if (inputVector.magnitude > Constant.MIN_DISTANCE)
+            if (inputVector.magnitude > Constant.MIN_INPUT_DISTANCE)
             {
                 MovementUtils.RotateToTarget(gameObject, inputVector);
                 MovementUtils.MoveToTarget(gameObject, inputVector);

@@ -1,12 +1,16 @@
+using Characters;
+using Movement;
 using UnityEngine;
 
 public class SpawnPoint : MonoBehaviour
 {
-    /*public bool IsFree => _potion == null || _potion.gameObject == null;
-    private Potion _potion;
+    [SerializeField] private NonPlayerCharacter _prefab;
+    [SerializeField] private MovementStrategiesEnum _defaultStrategy;
+    [SerializeField] private MovementStrategiesEnum _triggeredStrategy;
 
-    public void Occupy(Potion potion)
+    private void Awake()
     {
-        _potion = potion;
-    }*/
+        NonPlayerCharacter character = Instantiate(_prefab, gameObject.transform.position, Quaternion.identity);
+        character.Initialize(_defaultStrategy, _triggeredStrategy);
+    }
 }

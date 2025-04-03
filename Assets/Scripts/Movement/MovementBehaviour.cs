@@ -8,7 +8,10 @@ public class MovementBehaviour : MonoBehaviour
 
     private void Update()
     {
-        _currentStrategy.Move(gameObject);
+        if (_currentStrategy != null)
+        {
+            _currentStrategy.Move(gameObject);
+        }
     }
 
     public void Initialize(MovementStrategiesEnum newStrategy)

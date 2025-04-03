@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Movement
 {
-    public class RunAwayStrategy : MovementStrategy
+    public class ChaseStrategy : MovementStrategy
     {
         private static List<Hero> _allHeroes;
 
@@ -19,14 +19,18 @@ namespace Movement
             {
                 //do nothing
             }
-            
             else
             {
-                Vector3 currentDirection = new Vector3();
+                Vector3 currentDirection = Vector3.positiveInfinity;
 
                 foreach (Hero hero in _allHeroes)
                 {
-                    currentDirection += gameObject.transform.position - hero.transform.position;
+                    Vector3 vectorToHero = hero.transform.position - gameObject.transform.position;
+
+                    if (currentDirection.magnitude > vectorToHero.magnitude)
+                    {
+                        currentDirection = vectorToHero;
+                    }
                 }
 
                 MovementUtils.RotateToTarget(gameObject, currentDirection);

@@ -10,18 +10,22 @@
         <e p="Scripts" t="Include">
           <e p="Characters" t="Include">
             <e p="Hero.cs" t="Include" />
+            <e p="ICanDie.cs" t="Include" />
             <e p="NonPlayerCharacter.cs" t="Include" />
           </e>
           <e p="Constant.cs" t="Include" />
           <e p="ControlPoint.cs" t="Include" />
           <e p="Movement" t="Include">
+            <e p="AfraidAndDieStrategy.cs" t="Include" />
+            <e p="ChaseStrategy.cs" t="Include" />
             <e p="IdleStrategy.cs" t="Include" />
             <e p="IMovementStrategy.cs" t="Include" />
             <e p="MovementBehaviour.cs" t="Include" />
             <e p="MovementStrategies.cs" t="Include" />
             <e p="MovementUtils.cs" t="Include" />
             <e p="PatrollingStrategy.cs" t="Include" />
-            <e p="RunAwayFromHeroStrategy.cs" t="Include" />
+            <e p="RandomWalkStrategy.cs" t="Include" />
+            <e p="RunAwayStrategy.cs" t="Include" />
             <e p="WASDStrategy.cs" t="Include" />
           </e>
           <e p="SpawnController.cs" t="Include" />

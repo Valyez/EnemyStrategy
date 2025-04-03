@@ -1,38 +1,56 @@
 ﻿using Movement;
 using UnityEngine;
 
-[RequireComponent(typeof(Collider))]
-[RequireComponent(typeof(MovementBehaviour))]
-public class NonPlayerCharacter : MonoBehaviour
+namespace Characters
 {
-    [SerializeField] private MovementStrategiesEnum _defaultStrategy;
-    [SerializeField] private MovementStrategiesEnum _triggeredStrategy;
-
-    private MovementBehaviour _movementBehaviour;
-
-    private void Awake()
+    [RequireComponent(typeof(Collider))]
+    [RequireComponent(typeof(MovementBehaviour))]
+    public class NonPlayerCharacter : MonoBehaviour, ICanDie
     {
-        _movementBehaviour = gameObject.GetComponent<MovementBehaviour>();
-        _movementBehaviour.Initialize(_defaultStrategy);
-    }
+        [SerializeField] private MovementStrategiesEnum _defaultStrategy;
+        [SerializeField] private MovementStrategiesEnum _triggeredStrategy;
+        [SerializeField] private ParticleSystem _particleSystemPrefab;
 
-    private void OnTriggerEnter(Collider other)
-    {
-        Hero hero = other.GetComponent<Hero>();
+        private MovementBehaviour _movementBehaviour;
 
-        if (hero != null)
+        private void Awake()
         {
-            _movementBehaviour.SwapStrategy(_triggeredStrategy);
+            _movementBehaviour = gameObject.GetComponent<MovementBehaviour>();
+            _movementBehaviour.Initialize(_defaultStrategy);
         }
-    }
 
-    private void OnTriggerExit(Collider other)
-    {
-        Hero hero = other.GetComponent<Hero>();
-
-        if (hero != null)
+        public void Initialize(MovementStrategiesEnum defaultStrategy, MovementStrategiesEnum triggeredStrategy)
         {
-            _movementBehaviour.SwapStrategy(_defaultStrategy);
+            _defaultStrategy = defaultStrategy;
+            _triggeredStrategy = triggeredStrategy;
+            _movementBehaviour.Initialize(_defaultStrategy);
+        }
+
+        private void OnTriggerEnter(Collider other)
+        {
+            Hero hero = other.GetComponent<Hero>();
+
+            if (hero != null)
+            {
+                _movementBehaviour.SwapStrategy(_triggeredStrategy);
+            }
+        }
+
+        private void OnTriggerExit(Collider other)
+        {
+            Hero hero = other.GetComponent<Hero>();
+
+            if (hero != null)
+            {
+                _movementBehaviour.SwapStrategy(_defaultStrategy);
+            }
+        }
+
+        public void Die()
+        {
+            gameObject.SetActive(false);
+            ParticleSystem particleSystem = Instantiate(_particleSystemPrefab, gameObject.transform.position, Quaternion.identity);
+            particleSystem.Play();
         }
     }
 }

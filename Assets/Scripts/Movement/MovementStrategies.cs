@@ -6,46 +6,26 @@ using UnityEngine;
 namespace Movement
 {
     /**
-      * Класс - Enum в котором в виде статический полей будут собраны все возможные стратегии передвижения.
+      * Класс - Enum в котором будут собраны все возможные стратегии передвижения.
       * Доступ к ним получаем через статический метод GetStrategyByMovementStrategiesEnum.
       */
-    public class MovementStrategies
+    public static class MovementStrategies
     {
-        private static readonly MovementStrategies WASD = new MovementStrategies(
-            MovementStrategiesEnum.WASD,
-            new WASDStrategy());
-        
-        private static readonly MovementStrategies RUN_AWAY = new MovementStrategies(
-            MovementStrategiesEnum.WASD,
-            new RunAwayStrategy());
-
-   
-
         private static readonly Dictionary<MovementStrategiesEnum, MovementStrategy> _movementStrategiesDictionary;
-
-        private readonly MovementStrategiesEnum _name;
-
-        private MovementStrategy Strategy { get; }
 
         static MovementStrategies()
         {
-            _movementStrategiesDictionary = new Dictionary<MovementStrategiesEnum, MovementStrategy>();
-
-            foreach (FieldInfo field in typeof(MovementStrategies).GetFields(BindingFlags.NonPublic | BindingFlags.Static))
+            _movementStrategiesDictionary = new Dictionary<MovementStrategiesEnum, MovementStrategy>
             {
-                object value = field.GetValue(null);
+                {MovementStrategiesEnum.IDLE, new IdleStrategy()},
+                {MovementStrategiesEnum.PATROLLING, new PatrollingStrategy()},
+                {MovementStrategiesEnum.RANDOM_WALK, new RandomWalkStrategy()},
+                {MovementStrategiesEnum.RUN_AWAY, new RunAwayStrategy()},
+                {MovementStrategiesEnum.CHASE, new ChaseStrategy()},
+                {MovementStrategiesEnum.AFRAID_AND_DIE, new AfraidAndDieStrategy()},
+                {MovementStrategiesEnum.WASD, new WASDStrategy()}
+            };
 
-                if (value is MovementStrategies strategy)
-                {
-                    _movementStrategiesDictionary.Add(strategy._name, strategy.Strategy);
-                }
-            }
-        }
-
-        private MovementStrategies(MovementStrategiesEnum name, MovementStrategy strategy)
-        {
-            _name = name;
-            Strategy = strategy;
         }
 
         public static MovementStrategy GetStrategyByMovementStrategiesEnum(MovementStrategiesEnum strategiesEnum)
