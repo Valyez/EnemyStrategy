@@ -1,8 +1,10 @@
-﻿using UnityEngine;
+﻿using Characters;
+using DefaultNamespace;
+using UnityEngine;
 
 namespace Movement
 {
-    public class WASDStrategy : MovementStrategy
+    public class WASDStrategy : IMovementStrategy
     {
         public void Move(GameObject gameObject)
         {
@@ -20,6 +22,11 @@ namespace Movement
                 MovementUtils.RotateToTarget(gameObject, inputVector);
                 MovementUtils.MoveToTarget(gameObject, inputVector);
             }
+        }
+
+        public void Initialize(ControlPointsHolder controlPointsHolder, Hero hero)
+        {
+            //do nothing
         }
     }
 }

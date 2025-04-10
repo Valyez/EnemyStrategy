@@ -15,6 +15,7 @@
           </e>
           <e p="Constant.cs" t="Include" />
           <e p="ControlPoint.cs" t="Include" />
+          <e p="ControlPointsHolder.cs" t="Include" />
           <e p="Movement" t="Include">
             <e p="AfraidAndDieStrategy.cs" t="Include" />
             <e p="ChaseStrategy.cs" t="Include" />
@@ -28,7 +29,6 @@
             <e p="RunAwayStrategy.cs" t="Include" />
             <e p="WASDStrategy.cs" t="Include" />
           </e>
-          <e p="SpawnController.cs" t="Include" />
           <e p="SpawnPoint.cs" t="Include" />
         </e>
         <e p="TutorialInfo" t="Include">

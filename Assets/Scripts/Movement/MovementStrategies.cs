@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Reflection;
+using Unity.VisualScripting;
 using UnityEngine;
 
 namespace Movement
@@ -11,26 +12,26 @@ namespace Movement
       */
     public static class MovementStrategies
     {
-        private static readonly Dictionary<MovementStrategiesEnum, MovementStrategy> _movementStrategiesDictionary;
+        private static readonly Dictionary<MovementStrategiesEnum, Type> _movementStrategiesDictionary;
 
         static MovementStrategies()
         {
-            _movementStrategiesDictionary = new Dictionary<MovementStrategiesEnum, MovementStrategy>
+            _movementStrategiesDictionary = new Dictionary<MovementStrategiesEnum, Type>
             {
-                {MovementStrategiesEnum.IDLE, new IdleStrategy()},
-                {MovementStrategiesEnum.PATROLLING, new PatrollingStrategy()},
-                {MovementStrategiesEnum.RANDOM_WALK, new RandomWalkStrategy()},
-                {MovementStrategiesEnum.RUN_AWAY, new RunAwayStrategy()},
-                {MovementStrategiesEnum.CHASE, new ChaseStrategy()},
-                {MovementStrategiesEnum.AFRAID_AND_DIE, new AfraidAndDieStrategy()},
-                {MovementStrategiesEnum.WASD, new WASDStrategy()}
+                {MovementStrategiesEnum.IDLE, typeof(IdleStrategy)},
+                {MovementStrategiesEnum.PATROLLING, typeof(PatrollingStrategy)},
+                {MovementStrategiesEnum.RANDOM_WALK, typeof(RandomWalkStrategy)},
+                {MovementStrategiesEnum.RUN_AWAY, typeof(RunAwayStrategy)},
+                {MovementStrategiesEnum.CHASE, typeof(ChaseStrategy)},
+                {MovementStrategiesEnum.AFRAID_AND_DIE, typeof(AfraidAndDieStrategy)},
+                {MovementStrategiesEnum.WASD, typeof(WASDStrategy)}
             };
 
         }
 
-        public static MovementStrategy GetStrategyByMovementStrategiesEnum(MovementStrategiesEnum strategiesEnum)
+        public static IMovementStrategy GetStrategyByMovementStrategiesEnum(MovementStrategiesEnum strategiesEnum)
         {
-            return _movementStrategiesDictionary.GetValueOrDefault(strategiesEnum);
+            return Activator.CreateInstance(_movementStrategiesDictionary.GetValueOrDefault(strategiesEnum)) as IMovementStrategy;
         }
     }
 

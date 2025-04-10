@@ -1,6 +1,9 @@
-﻿using UnityEngine;
+﻿using Characters;
+using DefaultNamespace;
+using UnityEngine;
 
-public interface MovementStrategy
+public interface IMovementStrategy
 {
    public void Move(GameObject gameObject);
+   void Initialize(ControlPointsHolder controlPointsHolder, Hero hero);
 }

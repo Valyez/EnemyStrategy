@@ -21,16 +21,6 @@ namespace Movement
             return new Vector3(Random.Range(-100,100), 0, Random.Range(-100,100));
         }
         
-        public static List<Hero> GetHeroList()
-        {
-            return new List<Hero>(Object.FindObjectsOfType<Hero>());
-        }
-        
-        public static Queue<ControlPoint> GetControlPointList()
-        {
-            return new Queue<ControlPoint>(Object.FindObjectsOfType<ControlPoint>());
-        }
-        
         public static float GetDistanceToTarget(GameObject gameObject,Vector3 target2 )
         {
             return (gameObject.transform.position - target2).magnitude;

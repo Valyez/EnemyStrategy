@@ -1,10 +1,11 @@
 ﻿using System;
 using Characters;
+using DefaultNamespace;
 using UnityEngine;
 
 namespace Movement
 {
-    public class AfraidAndDieStrategy : MovementStrategy
+    public class AfraidAndDieStrategy : IMovementStrategy
     {
         public void Move(GameObject gameObject)
         {
@@ -30,6 +31,11 @@ namespace Movement
             {
                 canDie.Die();
             }
+        }
+
+        public void Initialize(ControlPointsHolder controlPointsHolder, Hero hero)
+        {
+            //do nothing
         }
     }
 }

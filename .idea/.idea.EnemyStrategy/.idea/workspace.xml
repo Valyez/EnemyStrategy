@@ -20,24 +20,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6249d490-1c22-4723-a317-d28da5908146" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Characters/ICanDie.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/AfraidAndDieStrategy.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/ChaseStrategy.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/RandomWalkStrategy.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ControlPointsHolder.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ControlPointsHolder.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.EnemyStrategy/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EnemyStrategy/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.EnemyStrategy/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EnemyStrategy/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.EnemyStrategy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EnemyStrategy/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemy.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SpawnPoint 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/SpawnPoint 1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SpawnPoint.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SpawnPoint.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Characters/Hero.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Characters/Hero.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Characters/NonPlayerCharacter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Characters/NonPlayerCharacter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Constant.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Constant.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/AfraidAndDieStrategy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/AfraidAndDieStrategy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/ChaseStrategy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/ChaseStrategy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/IMovementStrategy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/IMovementStrategy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/IdleStrategy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/IdleStrategy.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/MovementBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/MovementBehaviour.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/MovementStrategies.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/MovementStrategies.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/MovementUtils.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/MovementUtils.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/PatrollingStrategy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/PatrollingStrategy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/RandomWalkStrategy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/RandomWalkStrategy.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/RunAwayStrategy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/RunAwayStrategy.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/WASDStrategy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/WASDStrategy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpawnController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpawnController.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpawnPoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SpawnPoint.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,26 +81,27 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/MovementStrategy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MovementBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Movement/MovementStrategy.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Movement/IdleStrategy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Movement/PatroolingStrategy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ControlPoint.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Movement/IMovementStrategy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Movement/RunAwayFromHeroStrategy.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Movement/RandomWalkStrategy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Movement/AffraidAndDieStratedy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Characters/ICanDie.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Characters/Hero.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Movement/MovementStrategies.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Movement/AfraidAndDieStrategy.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Movement/ChaseStrategy.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Movement/RunAwayStrategy.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Movement/MovementBehaviour.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Movement/MovementUtils.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Movement/PatrollingStrategy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Constant.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Movement/MovementStrategies.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Movement/MovementUtils.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ControlPointsHolder.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Movement/IMovementStrategy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Movement/AfraidAndDieStrategy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Movement/WASDStrategy.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/SpawnPoint.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Movement/RunAwayStrategy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Movement/RandomWalkStrategy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Movement/PatrollingStrategy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Movement/MovementBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Movement/IdleStrategy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Movement/ChaseStrategy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Characters/NonPlayerCharacter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SpawnPoint.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Characters/Hero.cs" />
       </list>
     </option>
   </component>
@@ -145,6 +152,9 @@
       <workItem from="1743532236454" duration="20748000" />
       <workItem from="1743684461343" duration="3084000" />
       <workItem from="1743688567259" duration="1141000" />
+      <workItem from="1743690288095" duration="1332000" />
+      <workItem from="1743692800947" duration="5132000" />
+      <workItem from="1744298921790" duration="2702000" />
     </task>
     <servers />
   </component>
@@ -249,10 +259,10 @@
       <screen x="0" y="0" width="1536" height="912" />
     </state>
     <state x="93" y="93" width="1350" height="726" key="VCS.FileHistoryDialog/0.0.1536.912@0.0.1536.912" timestamp="1743685432622" />
-    <state x="439" y="189" width="658" height="534" key="find.popup" timestamp="1743684224396">
+    <state x="439" y="189" width="658" height="534" key="find.popup" timestamp="1744300458573">
       <screen x="0" y="0" width="1536" height="912" />
     </state>
-    <state x="439" y="189" width="658" height="534" key="find.popup/0.0.1536.912@0.0.1536.912" timestamp="1743684224396" />
+    <state x="439" y="189" width="658" height="534" key="find.popup/0.0.1536.912@0.0.1536.912" timestamp="1744300458573" />
     <state x="425" y="209" key="run.anything.popup" timestamp="1743521928850">
       <screen x="0" y="0" width="1536" height="912" />
     </state>
@@ -261,30 +271,5 @@
       <screen x="0" y="0" width="1536" height="912" />
     </state>
     <state x="431" y="193" key="search.everywhere.popup/0.0.1536.912@0.0.1536.912" timestamp="1743669882402" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/Movement/MovementStrategies.cs</url>
-          <line>57</line>
-          <properties documentPath="C:\Work\Unity\UnityProjects\EnemyStrategy\Assets\Scripts\MovementStrategies.cs" initialLine="47" />
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/Movement/PatrollingStrategy.cs</url>
-          <line>24</line>
-          <properties documentPath="C:\Work\Unity\UnityProjects\EnemyStrategy\Assets\Scripts\Movement\PatrollingStrategy.cs" initialLine="23">
-            <startOffsets>
-              <option value="825" />
-            </startOffsets>
-            <endOffsets>
-              <option value="882" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

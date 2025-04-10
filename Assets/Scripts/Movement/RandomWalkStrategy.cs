@@ -1,8 +1,10 @@
-﻿using UnityEngine;
+﻿using Characters;
+using DefaultNamespace;
+using UnityEngine;
 
 namespace Movement
 {
-    public class RandomWalkStrategy : MovementStrategy
+    public class RandomWalkStrategy : IMovementStrategy
     {
         private Vector3 _direction;
         private float _timer;
@@ -19,6 +21,11 @@ namespace Movement
 
             MovementUtils.RotateToTarget(gameObject, _direction);
             MovementUtils.MoveToTarget(gameObject, _direction);
+        }
+
+        public void Initialize(ControlPointsHolder controlPointsHolder, Hero hero)
+        {
+            //do nothing
         }
     }
 }

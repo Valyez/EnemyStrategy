@@ -1,37 +1,26 @@
 ﻿using System.Collections.Generic;
 using Characters;
+using DefaultNamespace;
 using UnityEngine;
 
 namespace Movement
 {
-    public class RunAwayStrategy : MovementStrategy
+    public class RunAwayStrategy : IMovementStrategy
     {
-        private static List<Hero> _allHeroes;
+        private static Hero _hero;
 
         public void Move(GameObject gameObject)
         {
-            if (_allHeroes == null)
-            {
-                _allHeroes = MovementUtils.GetHeroList();
-            }
-
-            if (_allHeroes.Count == 0)
-            {
-                //do nothing
-            }
+            Vector3 currentDirection = new Vector3();
+            currentDirection += gameObject.transform.position - _hero.transform.position;
             
-            else
-            {
-                Vector3 currentDirection = new Vector3();
+            MovementUtils.RotateToTarget(gameObject, currentDirection);
+            MovementUtils.MoveToTarget(gameObject, currentDirection);
+        }
 
-                foreach (Hero hero in _allHeroes)
-                {
-                    currentDirection += gameObject.transform.position - hero.transform.position;
-                }
-
-                MovementUtils.RotateToTarget(gameObject, currentDirection);
-                MovementUtils.MoveToTarget(gameObject, currentDirection);
-            }
+        public void Initialize(ControlPointsHolder controlPointsHolder, Hero hero)
+        {
+            _hero = hero;
         }
     }
 }

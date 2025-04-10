@@ -1,41 +1,25 @@
 ﻿using System.Collections.Generic;
 using Characters;
+using DefaultNamespace;
 using UnityEngine;
 
 namespace Movement
 {
-    public class ChaseStrategy : MovementStrategy
+    public class ChaseStrategy : IMovementStrategy
     {
-        private static List<Hero> _allHeroes;
+        private static Hero _hero;
 
         public void Move(GameObject gameObject)
         {
-            if (_allHeroes == null)
-            {
-                _allHeroes = MovementUtils.GetHeroList();
-            }
+            Vector3 vectorToHero = _hero.transform.position - gameObject.transform.position;
 
-            if (_allHeroes.Count == 0)
-            {
-                //do nothing
-            }
-            else
-            {
-                Vector3 currentDirection = Vector3.positiveInfinity;
+            MovementUtils.RotateToTarget(gameObject, vectorToHero);
+            MovementUtils.MoveToTarget(gameObject, vectorToHero);
+        }
 
-                foreach (Hero hero in _allHeroes)
-                {
-                    Vector3 vectorToHero = hero.transform.position - gameObject.transform.position;
-
-                    if (currentDirection.magnitude > vectorToHero.magnitude)
-                    {
-                        currentDirection = vectorToHero;
-                    }
-                }
-
-                MovementUtils.RotateToTarget(gameObject, currentDirection);
-                MovementUtils.MoveToTarget(gameObject, currentDirection);
-            }
+        public void Initialize(ControlPointsHolder controlPointsHolder, Hero hero)
+        {
+            _hero = hero;
         }
     }
 }

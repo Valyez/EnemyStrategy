@@ -1,4 +1,5 @@
-﻿using Movement;
+﻿using DefaultNamespace;
+using Movement;
 using UnityEngine;
 
 namespace Characters
@@ -12,18 +13,18 @@ namespace Characters
         [SerializeField] private ParticleSystem _particleSystemPrefab;
 
         private MovementBehaviour _movementBehaviour;
+        private Hero _hero;
 
-        private void Awake()
-        {
-            _movementBehaviour = gameObject.GetComponent<MovementBehaviour>();
-            _movementBehaviour.Initialize(_defaultStrategy);
-        }
-
-        public void Initialize(MovementStrategiesEnum defaultStrategy, MovementStrategiesEnum triggeredStrategy)
+        public void Initialize(MovementStrategiesEnum defaultStrategy,
+            MovementStrategiesEnum triggeredStrategy,
+            ControlPointsHolder controlPointsHolder,
+            Hero hero)
         {
             _defaultStrategy = defaultStrategy;
             _triggeredStrategy = triggeredStrategy;
-            _movementBehaviour.Initialize(_defaultStrategy);
+            _hero = hero;
+            _movementBehaviour = gameObject.GetComponent<MovementBehaviour>();
+            _movementBehaviour.Initialize(_defaultStrategy, controlPointsHolder, hero);
         }
 
         private void OnTriggerEnter(Collider other)
@@ -32,7 +33,7 @@ namespace Characters
 
             if (hero != null)
             {
-                _movementBehaviour.SwapStrategy(_triggeredStrategy);
+                _movementBehaviour.SwapStrategy(_triggeredStrategy,_hero);
             }
         }
 
@@ -42,14 +43,14 @@ namespace Characters
 
             if (hero != null)
             {
-                _movementBehaviour.SwapStrategy(_defaultStrategy);
+                _movementBehaviour.SwapStrategy(_defaultStrategy,_hero);
             }
         }
 
         public void Die()
         {
             gameObject.SetActive(false);
-            ParticleSystem particleSystem = Instantiate(_particleSystemPrefab, gameObject.transform.position, Quaternion.identity);
+            ParticleSystem particleSystem = Instantiate(_particleSystemPrefab, transform.position, Quaternion.identity);
             particleSystem.Play();
         }
     }
