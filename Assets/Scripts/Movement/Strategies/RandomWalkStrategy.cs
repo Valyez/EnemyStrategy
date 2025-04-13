@@ -22,10 +22,5 @@ namespace Movement
             MovementUtils.RotateToTarget(gameObject, _direction);
             MovementUtils.MoveToTarget(gameObject, _direction);
         }
-
-        public void Initialize(ControlPointsHolder controlPointsHolder, Hero hero)
-        {
-            //do nothing
-        }
     }
 }

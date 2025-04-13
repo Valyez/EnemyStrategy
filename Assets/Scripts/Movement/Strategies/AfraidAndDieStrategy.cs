@@ -1,6 +1,5 @@
 ﻿using System;
 using Characters;
-using DefaultNamespace;
 using UnityEngine;
 
 namespace Movement
@@ -31,11 +30,6 @@ namespace Movement
             {
                 canDie.Die();
             }
-        }
-
-        public void Initialize(ControlPointsHolder controlPointsHolder, Hero hero)
-        {
-            //do nothing
         }
     }
 }

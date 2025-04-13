@@ -10,10 +10,5 @@ namespace Movement
         {
             //do nothing
         }
-
-        public void Initialize(ControlPointsHolder controlPointsHolder, Hero hero)
-        {
-            //Do nothing
-        }
     }
 }

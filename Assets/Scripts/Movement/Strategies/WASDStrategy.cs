@@ -23,10 +23,5 @@ namespace Movement
                 MovementUtils.MoveToTarget(gameObject, inputVector);
             }
         }
-
-        public void Initialize(ControlPointsHolder controlPointsHolder, Hero hero)
-        {
-            //do nothing
-        }
     }
 }

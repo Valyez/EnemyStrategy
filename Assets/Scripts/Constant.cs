@@ -9,6 +9,7 @@
     public const float DEFAULT_MIN_SCALE = 0.5f;
 
     public const string NOT_IMPLEMENTING_ICANDIE_INTERFACE_EXCEPTION = "Данная стратегия не может быть применена к объекту т.к. он не реализует интерфейс \"ICanDie\"";
+    public const string UNKNOWN_CLASS_EXCEPTION = "Не найден класс стратегии соответствующий данному элементу ENUM";
     public const string HORIZONTAL_AXIS_NAME = "Horizontal";
     public const string VERTICAL_AXIS_NAME = "Vertical";
 }

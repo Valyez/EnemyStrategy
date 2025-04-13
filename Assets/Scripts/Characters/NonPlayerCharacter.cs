@@ -1,20 +1,18 @@
-﻿using DefaultNamespace;
+﻿using System;
+using DefaultNamespace;
 using Movement;
+using Movement.MovementBehaviour;
 using UnityEngine;
 
 namespace Characters
 {
     [RequireComponent(typeof(Collider))]
-    [RequireComponent(typeof(MovementBehaviour))]
-    public class NonPlayerCharacter : MonoBehaviour, ICanDie
+    public class NonPlayerCharacter : Character, ICanDie
     {
         [SerializeField] private MovementStrategiesEnum _defaultStrategy;
         [SerializeField] private MovementStrategiesEnum _triggeredStrategy;
         [SerializeField] private ParticleSystem _particleSystemPrefab;
-
-        private MovementBehaviour _movementBehaviour;
-        private Hero _hero;
-
+        
         public void Initialize(MovementStrategiesEnum defaultStrategy,
             MovementStrategiesEnum triggeredStrategy,
             ControlPointsHolder controlPointsHolder,
@@ -22,9 +20,8 @@ namespace Characters
         {
             _defaultStrategy = defaultStrategy;
             _triggeredStrategy = triggeredStrategy;
-            _hero = hero;
-            _movementBehaviour = gameObject.GetComponent<MovementBehaviour>();
-            _movementBehaviour.Initialize(_defaultStrategy, controlPointsHolder, hero);
+            movementBehaviour = new NonPlayerCharacterMovementBehaviour(controlPointsHolder, hero);
+            movementBehaviour.SwapStrategy(_defaultStrategy);
         }
 
         private void OnTriggerEnter(Collider other)
@@ -33,7 +30,7 @@ namespace Characters
 
             if (hero != null)
             {
-                _movementBehaviour.SwapStrategy(_triggeredStrategy,_hero);
+                movementBehaviour.SwapStrategy(_triggeredStrategy);
             }
         }
 
@@ -43,10 +40,10 @@ namespace Characters
 
             if (hero != null)
             {
-                _movementBehaviour.SwapStrategy(_defaultStrategy,_hero);
+                movementBehaviour.SwapStrategy(_defaultStrategy);
             }
         }
-
+        
         public void Die()
         {
             gameObject.SetActive(false);

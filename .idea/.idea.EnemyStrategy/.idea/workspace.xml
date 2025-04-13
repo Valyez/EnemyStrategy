@@ -20,31 +20,44 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6249d490-1c22-4723-a317-d28da5908146" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ControlPointsHolder.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ControlPointsHolder.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Characters/Character.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Characters/Character.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/MovementBehaviour.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/MovementBehaviour/HeroMovementBehaviour.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/MovementBehaviour/HeroMovementBehaviour.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/MovementBehaviour/MovementBehaviour.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/MovementBehaviour/MovementBehaviour.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/MovementBehaviour/NonPlayerCharacterMovementBehaviour.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/Strategies.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/Strategies/IMovementStrategy.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.EnemyStrategy/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EnemyStrategy/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.EnemyStrategy/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EnemyStrategy/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.EnemyStrategy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EnemyStrategy/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SpawnPoint 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/SpawnPoint 1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SpawnPoint.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SpawnPoint.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemy.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Hero.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Hero.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Characters/Hero.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Characters/Hero.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Characters/NonPlayerCharacter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Characters/NonPlayerCharacter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/AfraidAndDieStrategy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/AfraidAndDieStrategy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/ChaseStrategy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/ChaseStrategy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/IMovementStrategy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/IMovementStrategy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/IdleStrategy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/IdleStrategy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/MovementBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/MovementBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/MovementStrategies.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/MovementStrategies.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/MovementUtils.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/MovementUtils.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/PatrollingStrategy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/PatrollingStrategy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/RandomWalkStrategy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/RandomWalkStrategy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/RunAwayStrategy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/RunAwayStrategy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/WASDStrategy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/WASDStrategy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpawnController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpawnController.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpawnPoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SpawnPoint.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Constant.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Constant.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/AfraidAndDieStrategy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/Strategies/AfraidAndDieStrategy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/AfraidAndDieStrategy.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/Strategies/AfraidAndDieStrategy.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/ChaseStrategy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/Strategies/ChaseStrategy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/ChaseStrategy.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/Strategies/ChaseStrategy.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/IMovementStrategy.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/IMovementStrategy.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/Strategies/IMovementStrategy.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/IdleStrategy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/Strategies/IdleStrategy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/IdleStrategy.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/Strategies/IdleStrategy.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/MovementBehaviour.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/MovementBehaviour.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/MovementBehaviour/NonPlayerCharacterMovementBehaviour.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/MovementStrategies.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/Strategies/MovementStrategiesUtils.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/MovementStrategies.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/Strategies/MovementStrategiesUtils.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/PatrollingStrategy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/Strategies/PatrollingStrategy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/PatrollingStrategy.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/Strategies/PatrollingStrategy.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/RandomWalkStrategy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/Strategies/RandomWalkStrategy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/RandomWalkStrategy.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/Strategies/RandomWalkStrategy.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/RunAwayStrategy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/Strategies/RunAwayStrategy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/RunAwayStrategy.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/Strategies/RunAwayStrategy.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/WASDStrategy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/Strategies/WASDStrategy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movement/WASDStrategy.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movement/Strategies/WASDStrategy.cs.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,13 +69,16 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F7237CF7-ABEF-49BF-BB55-2D7EB076E422/3d/9c028e93/Component.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Movement/RunAwayStrategy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Movement/Strategies/RunAwayStrategy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/17D9CE77-F27A-4BD2-AFB5-BA32C9BEA976/17/ab078dec/FieldInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5A41D6B7-1898-42EC-A409-FD0B1C3E3DCF/c7/fd695ab7/BindingFlags.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/5A41D6B7-1898-42EC-A409-FD0B1C3E3DCF/0/System.Collections.Generic.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F6650F70-2D12-47C2-A531-1A89B759BA03/c3/271f8188/EventDispatcher.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F7237CF7-ABEF-49BF-BB55-2D7EB076E422/d0/4f37d5ea/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5A41D6B7-1898-42EC-A409-FD0B1C3E3DCF/46/1f3f62cf/Action`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -86,22 +102,30 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Movement/RunAwayFromHeroStrategy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Movement/AffraidAndDieStratedy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Characters/ICanDie.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Constant.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Movement/MovementStrategies.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Movement/MovementUtils.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ControlPointsHolder.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Movement/IMovementStrategy.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Movement/AfraidAndDieStrategy.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Movement/WASDStrategy.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Movement/RunAwayStrategy.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Movement/RandomWalkStrategy.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Movement/PatrollingStrategy.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Movement/MovementBehaviour.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Movement/IdleStrategy.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Movement/ChaseStrategy.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Characters/NonPlayerCharacter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SpawnPoint.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Movement/IMovementStrategy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Movement/WASDStrategy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Movement/AfraidAndDieStrategy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Movement/ChaseStrategy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Movement/IdleStrategy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Movement/RandomWalkStrategy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Movement/RunAwayStrategy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Movement/MovementStrategies.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Movement/PatrollingStrategy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Constant.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Movement/NonPlayerCharacterMovementBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Movement/MovementBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Movement/Strategies/MovementStrategiesUtils.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Movement/MovementBehaviour/CharacterBeahviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Movement/MovementBehaviour/MovementBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Characters/NonPlayerCharacter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Characters/Character.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Characters/Hero.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Movement/MovementBehaviour/HeroMovementBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Movement/MovementBehaviour/NonPlayerCharacterMovementBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Movement/Strategies/PatrollingStrategy.cs" />
       </list>
     </option>
   </component>
@@ -130,10 +154,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="15184">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="15184" />
       <option name="selectedOptions">
         <set />
       </option>
@@ -154,7 +178,8 @@
       <workItem from="1743688567259" duration="1141000" />
       <workItem from="1743690288095" duration="1332000" />
       <workItem from="1743692800947" duration="5132000" />
-      <workItem from="1744298921790" duration="2702000" />
+      <workItem from="1744298921790" duration="3429000" />
+      <workItem from="1744520892519" duration="5357000" />
     </task>
     <servers />
   </component>
@@ -179,78 +204,82 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="943" y="283" key="#xdebugger.evaluate" timestamp="1743685276830">
+    <state x="762" y="321" key="#xdebugger.evaluate" timestamp="1744525908643">
       <screen x="0" y="0" width="1536" height="912" />
     </state>
-    <state x="943" y="283" key="#xdebugger.evaluate/0.0.1536.912@0.0.1536.912" timestamp="1743685276830" />
-    <state width="1493" height="323" key="GridCell.Tab.0.bottom" timestamp="1743687572570">
+    <state x="762" y="321" key="#xdebugger.evaluate/0.0.1536.912@0.0.1536.912" timestamp="1744525908643" />
+    <state width="486" height="464" key="DebuggerActiveHint" timestamp="1744525871355">
       <screen x="0" y="0" width="1536" height="912" />
     </state>
-    <state width="1493" height="323" key="GridCell.Tab.0.bottom/0.0.1536.912@0.0.1536.912" timestamp="1743687572570" />
-    <state width="1493" height="323" key="GridCell.Tab.0.center" timestamp="1743687572570">
+    <state width="486" height="464" key="DebuggerActiveHint/0.0.1536.912@0.0.1536.912" timestamp="1744525871355" />
+    <state width="1493" height="323" key="GridCell.Tab.0.bottom" timestamp="1744526291672">
       <screen x="0" y="0" width="1536" height="912" />
     </state>
-    <state width="1493" height="323" key="GridCell.Tab.0.center/0.0.1536.912@0.0.1536.912" timestamp="1743687572570" />
-    <state width="1493" height="323" key="GridCell.Tab.0.left" timestamp="1743687572570">
+    <state width="1493" height="323" key="GridCell.Tab.0.bottom/0.0.1536.912@0.0.1536.912" timestamp="1744526291672" />
+    <state width="1493" height="323" key="GridCell.Tab.0.center" timestamp="1744526291672">
       <screen x="0" y="0" width="1536" height="912" />
     </state>
-    <state width="1493" height="323" key="GridCell.Tab.0.left/0.0.1536.912@0.0.1536.912" timestamp="1743687572570" />
-    <state width="1493" height="323" key="GridCell.Tab.0.right" timestamp="1743687572570">
+    <state width="1493" height="323" key="GridCell.Tab.0.center/0.0.1536.912@0.0.1536.912" timestamp="1744526291672" />
+    <state width="1493" height="323" key="GridCell.Tab.0.left" timestamp="1744526291672">
       <screen x="0" y="0" width="1536" height="912" />
     </state>
-    <state width="1493" height="323" key="GridCell.Tab.0.right/0.0.1536.912@0.0.1536.912" timestamp="1743687572570" />
-    <state width="1493" height="323" key="GridCell.Tab.1.bottom" timestamp="1743687572570">
+    <state width="1493" height="323" key="GridCell.Tab.0.left/0.0.1536.912@0.0.1536.912" timestamp="1744526291672" />
+    <state width="1493" height="323" key="GridCell.Tab.0.right" timestamp="1744526291672">
       <screen x="0" y="0" width="1536" height="912" />
     </state>
-    <state width="1493" height="323" key="GridCell.Tab.1.bottom/0.0.1536.912@0.0.1536.912" timestamp="1743687572570" />
-    <state width="1493" height="323" key="GridCell.Tab.1.center" timestamp="1743687572570">
+    <state width="1493" height="323" key="GridCell.Tab.0.right/0.0.1536.912@0.0.1536.912" timestamp="1744526291672" />
+    <state width="1493" height="323" key="GridCell.Tab.1.bottom" timestamp="1744526291672">
       <screen x="0" y="0" width="1536" height="912" />
     </state>
-    <state width="1493" height="323" key="GridCell.Tab.1.center/0.0.1536.912@0.0.1536.912" timestamp="1743687572570" />
-    <state width="1493" height="323" key="GridCell.Tab.1.left" timestamp="1743687572570">
+    <state width="1493" height="323" key="GridCell.Tab.1.bottom/0.0.1536.912@0.0.1536.912" timestamp="1744526291672" />
+    <state width="1493" height="323" key="GridCell.Tab.1.center" timestamp="1744526291672">
       <screen x="0" y="0" width="1536" height="912" />
     </state>
-    <state width="1493" height="323" key="GridCell.Tab.1.left/0.0.1536.912@0.0.1536.912" timestamp="1743687572570" />
-    <state width="1493" height="323" key="GridCell.Tab.1.right" timestamp="1743687572570">
+    <state width="1493" height="323" key="GridCell.Tab.1.center/0.0.1536.912@0.0.1536.912" timestamp="1744526291672" />
+    <state width="1493" height="323" key="GridCell.Tab.1.left" timestamp="1744526291672">
       <screen x="0" y="0" width="1536" height="912" />
     </state>
-    <state width="1493" height="323" key="GridCell.Tab.1.right/0.0.1536.912@0.0.1536.912" timestamp="1743687572570" />
-    <state width="1493" height="323" key="GridCell.Tab.2.bottom" timestamp="1743687572570">
+    <state width="1493" height="323" key="GridCell.Tab.1.left/0.0.1536.912@0.0.1536.912" timestamp="1744526291672" />
+    <state width="1493" height="323" key="GridCell.Tab.1.right" timestamp="1744526291672">
       <screen x="0" y="0" width="1536" height="912" />
     </state>
-    <state width="1493" height="323" key="GridCell.Tab.2.bottom/0.0.1536.912@0.0.1536.912" timestamp="1743687572570" />
-    <state width="1493" height="323" key="GridCell.Tab.2.center" timestamp="1743687572570">
+    <state width="1493" height="323" key="GridCell.Tab.1.right/0.0.1536.912@0.0.1536.912" timestamp="1744526291672" />
+    <state width="1493" height="323" key="GridCell.Tab.2.bottom" timestamp="1744526291672">
       <screen x="0" y="0" width="1536" height="912" />
     </state>
-    <state width="1493" height="323" key="GridCell.Tab.2.center/0.0.1536.912@0.0.1536.912" timestamp="1743687572570" />
-    <state width="1493" height="323" key="GridCell.Tab.2.left" timestamp="1743687572570">
+    <state width="1493" height="323" key="GridCell.Tab.2.bottom/0.0.1536.912@0.0.1536.912" timestamp="1744526291672" />
+    <state width="1493" height="323" key="GridCell.Tab.2.center" timestamp="1744526291672">
       <screen x="0" y="0" width="1536" height="912" />
     </state>
-    <state width="1493" height="323" key="GridCell.Tab.2.left/0.0.1536.912@0.0.1536.912" timestamp="1743687572570" />
-    <state width="1493" height="323" key="GridCell.Tab.2.right" timestamp="1743687572570">
+    <state width="1493" height="323" key="GridCell.Tab.2.center/0.0.1536.912@0.0.1536.912" timestamp="1744526291672" />
+    <state width="1493" height="323" key="GridCell.Tab.2.left" timestamp="1744526291672">
       <screen x="0" y="0" width="1536" height="912" />
     </state>
-    <state width="1493" height="323" key="GridCell.Tab.2.right/0.0.1536.912@0.0.1536.912" timestamp="1743687572570" />
-    <state width="1493" height="323" key="GridCell.Tab.3.bottom" timestamp="1743687572570">
+    <state width="1493" height="323" key="GridCell.Tab.2.left/0.0.1536.912@0.0.1536.912" timestamp="1744526291672" />
+    <state width="1493" height="323" key="GridCell.Tab.2.right" timestamp="1744526291672">
       <screen x="0" y="0" width="1536" height="912" />
     </state>
-    <state width="1493" height="323" key="GridCell.Tab.3.bottom/0.0.1536.912@0.0.1536.912" timestamp="1743687572570" />
-    <state width="1493" height="323" key="GridCell.Tab.3.center" timestamp="1743687572570">
+    <state width="1493" height="323" key="GridCell.Tab.2.right/0.0.1536.912@0.0.1536.912" timestamp="1744526291672" />
+    <state width="1493" height="323" key="GridCell.Tab.3.bottom" timestamp="1744526291672">
       <screen x="0" y="0" width="1536" height="912" />
     </state>
-    <state width="1493" height="323" key="GridCell.Tab.3.center/0.0.1536.912@0.0.1536.912" timestamp="1743687572570" />
-    <state width="1493" height="323" key="GridCell.Tab.3.left" timestamp="1743687572570">
+    <state width="1493" height="323" key="GridCell.Tab.3.bottom/0.0.1536.912@0.0.1536.912" timestamp="1744526291672" />
+    <state width="1493" height="323" key="GridCell.Tab.3.center" timestamp="1744526291672">
       <screen x="0" y="0" width="1536" height="912" />
     </state>
-    <state width="1493" height="323" key="GridCell.Tab.3.left/0.0.1536.912@0.0.1536.912" timestamp="1743687572570" />
-    <state width="1493" height="323" key="GridCell.Tab.3.right" timestamp="1743687572570">
+    <state width="1493" height="323" key="GridCell.Tab.3.center/0.0.1536.912@0.0.1536.912" timestamp="1744526291672" />
+    <state width="1493" height="323" key="GridCell.Tab.3.left" timestamp="1744526291672">
       <screen x="0" y="0" width="1536" height="912" />
     </state>
-    <state width="1493" height="323" key="GridCell.Tab.3.right/0.0.1536.912@0.0.1536.912" timestamp="1743687572570" />
-    <state x="479" y="135" key="RiderGenerateDialog" timestamp="1743525094412">
+    <state width="1493" height="323" key="GridCell.Tab.3.left/0.0.1536.912@0.0.1536.912" timestamp="1744526291672" />
+    <state width="1493" height="323" key="GridCell.Tab.3.right" timestamp="1744526291672">
       <screen x="0" y="0" width="1536" height="912" />
     </state>
-    <state x="479" y="135" key="RiderGenerateDialog/0.0.1536.912@0.0.1536.912" timestamp="1743525094412" />
+    <state width="1493" height="323" key="GridCell.Tab.3.right/0.0.1536.912@0.0.1536.912" timestamp="1744526291672" />
+    <state x="479" y="135" key="RiderGenerateDialog" timestamp="1744521598832">
+      <screen x="0" y="0" width="1536" height="912" />
+    </state>
+    <state x="479" y="135" key="RiderGenerateDialog/0.0.1536.912@0.0.1536.912" timestamp="1744521598832" />
     <state x="363" y="204" width="981" height="708" key="SettingsEditor" timestamp="1743528716090">
       <screen x="0" y="0" width="1536" height="912" />
     </state>
@@ -259,17 +288,36 @@
       <screen x="0" y="0" width="1536" height="912" />
     </state>
     <state x="93" y="93" width="1350" height="726" key="VCS.FileHistoryDialog/0.0.1536.912@0.0.1536.912" timestamp="1743685432622" />
-    <state x="439" y="189" width="658" height="534" key="find.popup" timestamp="1744300458573">
+    <state x="439" y="189" width="658" height="534" key="find.popup" timestamp="1744523131833">
       <screen x="0" y="0" width="1536" height="912" />
     </state>
-    <state x="439" y="189" width="658" height="534" key="find.popup/0.0.1536.912@0.0.1536.912" timestamp="1744300458573" />
+    <state x="439" y="189" width="658" height="534" key="find.popup/0.0.1536.912@0.0.1536.912" timestamp="1744523131833" />
     <state x="425" y="209" key="run.anything.popup" timestamp="1743521928850">
       <screen x="0" y="0" width="1536" height="912" />
     </state>
     <state x="425" y="209" key="run.anything.popup/0.0.1536.912@0.0.1536.912" timestamp="1743521928850" />
-    <state x="431" y="193" key="search.everywhere.popup" timestamp="1743669882402">
+    <state x="431" y="193" width="672" height="678" key="search.everywhere.popup" timestamp="1744522293898">
       <screen x="0" y="0" width="1536" height="912" />
     </state>
-    <state x="431" y="193" key="search.everywhere.popup/0.0.1536.912@0.0.1536.912" timestamp="1743669882402" />
+    <state x="431" y="193" width="672" height="678" key="search.everywhere.popup/0.0.1536.912@0.0.1536.912" timestamp="1744522293898" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Movement/MovementBehaviour/NonPlayerCharacterMovementBehaviour.cs</url>
+          <line>28</line>
+          <properties documentPath="C:\Work\Unity\UnityProjects\EnemyStrategy\Assets\Scripts\Movement\MovementBehaviour\NonPlayerCharacterMovementBehaviour.cs" initialLine="27">
+            <startOffsets>
+              <option value="877" />
+            </startOffsets>
+            <endOffsets>
+              <option value="971" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

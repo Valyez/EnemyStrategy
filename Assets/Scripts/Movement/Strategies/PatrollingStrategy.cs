@@ -11,6 +11,13 @@ namespace Movement
         private ControlPointsHolder _controlPointsHolder;
         private Vector3 _currentTarget;
 
+        public PatrollingStrategy(ControlPointsHolder controlPointsHolder)
+        {
+            _controlPointsHolder = controlPointsHolder;
+            _controlPointsQueue = new Queue<ControlPoint>();
+            _currentTarget = Vector3.zero;
+        }
+
         public void Move(GameObject gameObject)
         {
             if ( _controlPointsQueue.Count == 0)
@@ -28,14 +35,7 @@ namespace Movement
             MovementUtils.RotateToTarget(gameObject, vectorToTarget);
             MovementUtils.MoveToTarget(gameObject, vectorToTarget);
         }
-
-        public void Initialize(ControlPointsHolder controlPointsHolder, Hero hero)
-        {
-            _controlPointsHolder = controlPointsHolder;
-            _controlPointsQueue = new Queue<ControlPoint>();
-            UpdateControlPointQueue();
-        }
-
+        
         private void UpdateControlPointQueue()
         {
             List<ControlPoint> controlPointsList = _controlPointsHolder.ControlPointsList;

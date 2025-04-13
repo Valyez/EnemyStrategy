@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Reflection;
-using Unity.VisualScripting;
-using UnityEngine;
 
 namespace Movement
 {
@@ -10,11 +7,11 @@ namespace Movement
       * Класс - Enum в котором будут собраны все возможные стратегии передвижения.
       * Доступ к ним получаем через статический метод GetStrategyByMovementStrategiesEnum.
       */
-    public static class MovementStrategies
+    public static class MovementStrategiesUtils
     {
         private static readonly Dictionary<MovementStrategiesEnum, Type> _movementStrategiesDictionary;
 
-        static MovementStrategies()
+        static MovementStrategiesUtils()
         {
             _movementStrategiesDictionary = new Dictionary<MovementStrategiesEnum, Type>
             {
@@ -29,9 +26,9 @@ namespace Movement
 
         }
 
-        public static IMovementStrategy GetStrategyByMovementStrategiesEnum(MovementStrategiesEnum strategiesEnum)
+        public static Type GetStrategyByMovementStrategiesEnum(MovementStrategiesEnum strategiesEnum)
         {
-            return Activator.CreateInstance(_movementStrategiesDictionary.GetValueOrDefault(strategiesEnum)) as IMovementStrategy;
+            return _movementStrategiesDictionary.GetValueOrDefault(strategiesEnum);
         }
     }
 

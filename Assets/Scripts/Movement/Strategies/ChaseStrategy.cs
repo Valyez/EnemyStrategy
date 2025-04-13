@@ -1,13 +1,16 @@
-﻿using System.Collections.Generic;
-using Characters;
-using DefaultNamespace;
+﻿using Characters;
 using UnityEngine;
 
 namespace Movement
 {
     public class ChaseStrategy : IMovementStrategy
     {
-        private static Hero _hero;
+        private Hero _hero;
+
+        public ChaseStrategy(Hero hero)
+        {
+            _hero = hero;
+        }
 
         public void Move(GameObject gameObject)
         {
@@ -15,11 +18,6 @@ namespace Movement
 
             MovementUtils.RotateToTarget(gameObject, vectorToHero);
             MovementUtils.MoveToTarget(gameObject, vectorToHero);
-        }
-
-        public void Initialize(ControlPointsHolder controlPointsHolder, Hero hero)
-        {
-            _hero = hero;
         }
     }
 }

@@ -7,7 +7,12 @@ namespace Movement
 {
     public class RunAwayStrategy : IMovementStrategy
     {
-        private static Hero _hero;
+        private Hero _hero;
+
+        public RunAwayStrategy(Hero hero)
+        {
+            _hero = hero;
+        }
 
         public void Move(GameObject gameObject)
         {
@@ -16,11 +21,6 @@ namespace Movement
             
             MovementUtils.RotateToTarget(gameObject, currentDirection);
             MovementUtils.MoveToTarget(gameObject, currentDirection);
-        }
-
-        public void Initialize(ControlPointsHolder controlPointsHolder, Hero hero)
-        {
-            _hero = hero;
         }
     }
 }
